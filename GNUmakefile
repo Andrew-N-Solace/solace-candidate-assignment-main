@@ -26,6 +26,15 @@ db-create: up
 	psql -U $(DB_USER) -tAc "SELECT 1 FROM pg_database WHERE datname='$$DB_NAME_CLEAN'" | grep -q 1 || { docker compose exec -T $(DB_SERVICE) psql -U $(DB_USER) -v ON_ERROR_STOP=0 -d postgres -c "CREATE DATABASE \"$$DB_NAME_CLEAN\";"; };
 	echo "Database ready."
 
+# Seed DB
+db-seed:
+	npm exec -- \
+	  ts-node -r tsconfig-paths/register ./src/db/seed/advocates.ts
+
+# regenerate TS types from DB
+gen: 
+	npx drizzle-kit generate:pg
+
 # Run Drizzle migrations
 db-migrate:
 	npx drizzle-kit push
