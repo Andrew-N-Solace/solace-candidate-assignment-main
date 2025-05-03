@@ -12,6 +12,7 @@ This is my submission for the Solace take-home interview completed on 5/3/25.
    - [Why PostgreSQL ?](#why-postgresql)
    - [Index strategy](#index-strategy)
 6. [Frontend Implementation](#frontend-implementation)
+7. [What's Next?](#whats-next)
 
 ## Quick-start
 
@@ -80,6 +81,14 @@ React is arguably my strongest suite and I wanted to highlight my ability to thi
 
 ![Dark Mode](./img/dark-mode.png)
 ![Light Mode](./img/light-mode.png)
+
+---
+
+### What's Next?
+
+I would have loved to spend more time building out more pages. I know there are more logical "entities" for this assignment that could have been designed so I would want to showcase my skills in that capacity as well.
+
+I have also authored several enterprise-grade passport auth stratedgies but did not have time to implement any for this project. You can see places where I left placeholders, comments for adding the various auth stratedgies but decided that adding auth was out-of-scope for this project.
 
 ---
 
