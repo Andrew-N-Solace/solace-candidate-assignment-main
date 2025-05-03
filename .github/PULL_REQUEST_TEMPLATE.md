@@ -26,7 +26,6 @@
 
 ## ✅ Checklist
 
-- [ ] Code compiles & lints (`pnpm lint`)
 - [ ] Unit / integration tests passing
 - [ ] Added / updated documentation
 - [ ] I’ve manually tested the happy path
