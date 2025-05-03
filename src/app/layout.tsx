@@ -1,22 +1,28 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import QueryProvider from "@/components/QueryProvider";
+import ThemeProvider from "@/components/ThemeProvider";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Solace Candidate Assignment",
-  description: "Show us what you got",
+  description: "Here's what I got 🥹",
 };
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-surface text-text`}>
+        <ThemeProvider>
+          <QueryProvider>{children}</QueryProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

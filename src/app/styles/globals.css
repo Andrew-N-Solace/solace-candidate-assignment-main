@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── semantic palette :root = LIGHT MODE ──────────────── */
+:root {
+  --color-surface: #ffffff; /* body background */
+  --color-text: #334155; /* slate-700 */
+  --color-primary: #4f46e5; /* indigo-600 */
+}
+
+/* ── DARK MODE overrides (when .dark is on <html>) ────── */
+.dark {
+  --color-surface: #1e293b; /* slate-800 */
+  --color-text: #e2e8f0; /* slate-200 */
+  --color-primary: #6366f1; /* indigo-500 */
+}
