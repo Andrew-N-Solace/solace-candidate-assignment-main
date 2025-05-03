@@ -7,18 +7,18 @@
 
 <!-- Description of PR change -->
 
+## ✨ Changes introduced
+
+<!-- Bullet list of key changes -->
+
+-
+
 ## 🔄 Type of change
 
 - [ ] feat (new feature)
 - [ ] fix (bug fix)
 - [ ] refactor (code change that neither fixes a bug nor adds a feature)
 - [ ] chore (build / tooling / docs)
-
-## ✨ Changes introduced
-
-<!-- Bullet list of key changes -->
-
--
 
 ## 🖼️ Screenshots / GIF (optional)
 
